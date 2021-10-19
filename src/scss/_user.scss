@@ -2,3 +2,42 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+.navbar-brand {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #325eeb;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.user-account-btn {
+  background-color: #ddd;
+  width: 50px;
+  height: 30px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 30px;
+  text-align: center;
+}
+
+#dropdownMenuButton1.dropdown-toggle::after {
+  content: none;
+}
+
+.user-account-btn .dropdown-menu {
+  min-width: 160px;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+}
+
+.user-account-btn .dropdown-item {
+  text-transform: none;
+  padding: 0.25rem 1.5rem;
+  margin: 0;
+}
+
+.user-account-btn .dropdown-item:hover {
+  background-color: #f7f7f7;
+}
