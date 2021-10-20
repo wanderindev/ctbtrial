@@ -2,6 +2,14 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+.navbar-nav {
+  margin: auto;
+}
+
+.navbar-collapse.show {
+  z-index: 1000;
+}
+
 .navbar-brand {
   font-family: 'IBM Plex Mono', monospace;
   color: #325eeb;
@@ -21,7 +29,7 @@
   text-align: center;
 }
 
-#dropdownMenuButton1.dropdown-toggle::after {
+#userDropdown.dropdown-toggle::after {
   content: none;
 }
 
@@ -40,4 +48,24 @@
 
 .user-account-btn .dropdown-item:hover {
   background-color: #f7f7f7;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.account-settings-main {
+  margin-top: -2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .account-settings-container .card{
+    border-radius: 0.375rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .account-settings-container {
+    max-width: 90%;
+  }
 }
