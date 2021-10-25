@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {{> partials/head title="How-To Set Up Your Binance API Keys"}}
+</head>
+<body class="bg-light">
+
+<!-- MODALS -->
+{{> partials/modals}}
+
+<!-- NAVBAR -->
+{{> partials/navbar classList="navbar-light bg-white" container="container-md" button="primary"}}
+
+<!-- HEADER -->
+<header class="bg-dark pt-9 pb-11 d-md-block">
+    <div class="container-md">
+        <div class="row align-items-center">
+            <div class="col">
+
+                <!-- Heading -->
+                <h1 class="fw-bold text-white mb-2">
+                    How To Set Up Your Binance API Keys
+                </h1>
+
+            </div>
+
+        </div>
+    </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</header>
+
+<!-- MAIN -->
+<main class="pb-8 pb-md-11 account-settings-main">
+    <div class="container-sm account-settings-container">
+        <div class="row">
+
+            <div class="col-12 d-flex">
+
+                <!-- Card -->
+                <div class="card shadow-light-lg">
+
+                    <section class="pt-6 pt-md-8">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+                                    <!-- Heading -->
+                                    <h3 class="fw-bold">
+                                        Summary
+                                    </h3>
+
+                                    <!-- Text -->
+                                    <p class="mb-7">
+                                        In your Binance account, you can create public and private keys which allow
+                                        remote connections via the Binance API. CTB uses those keys to authenticate
+                                        with Binance.  This guide explains how to set them.
+                                    </p>
+
+                                    <!-- Divider -->
+                                    <hr class="hr-md mb-7">
+
+                                    <!-- Heading -->
+                                    <h3 class="fw-bold">
+                                        What Do You Need?
+                                    </h3>
+
+                                    <!-- Text -->
+                                    <p class="mb-7">
+                                        To complete this guide, you will need a verified
+                                        <a href="https://binance.com" target="_blank">Binance</a> account.
+                                    </p>
+
+                                    <!-- Divider -->
+                                    <hr class="hr-md mb-7">
+
+                                    <!-- Heading -->
+                                    <h3 class="fw-bold">
+                                        Steps
+                                    </h3>
+
+                                    <!-- List -->
+                                    <ol class="list-unstyled mb-7 how-to">
+                                        <li class="d-flex">
+
+                                            <!-- Check -->
+                                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                                <i class="fe fe-check"></i>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <p>
+                                                Log in to your <a href="https://binance.com" target="_blank">Binance</a>
+                                                account.
+                                            </p>
+
+                                        </li>
+                                        <li class="d-flex">
+
+                                            <!-- Check -->
+                                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                                <i class="fe fe-check"></i>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <p>
+                                                Click on API Management on your user menu.
+                                                <img src="assets/img/binance-api-01.png" alt="..." class="img-fluid rounded">
+                                            </p>
+
+
+                                        </li>
+                                        <li class="d-flex">
+
+                                            <!-- Check -->
+                                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                                <i class="fe fe-check"></i>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <p>
+                                                Enter a name in the Label API key field, for example, Crypto-Bot, and click
+                                                Create API.  Binance will confirm that it is you and then will redirect you
+                                                to the API List page.
+                                                <img src="assets/img/binance-api-02.png" alt="..." class="img-fluid rounded">
+                                            </p>
+
+                                        </li>
+                                        <li class="d-flex">
+
+                                            <!-- Check -->
+                                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                                <i class="fe fe-check"></i>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <p>
+                                                Click on Edit Restrictions.
+                                                <img src="assets/img/binance-api-03.png" alt="..." class="img-fluid rounded">
+                                            </p>
+
+                                        </li>
+                                        <li class="d-flex">
+
+                                            <!-- Check -->
+                                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                                <i class="fe fe-check"></i>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <p>
+                                                Check the Enable Spot & Margin Trading checkbox.
+                                                <img src="assets/img/binance-api-04.png" alt="..." class="img-fluid rounded">
+                                            </p>
+
+                                        </li>
+                                        <li class="d-flex">
+
+                                            <!-- Check -->
+                                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                                <i class="fe fe-check"></i>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <p>
+                                                Click on Save.
+                                                <img src="assets/img/binance-api-05.png" alt="..." class="img-fluid rounded">
+                                            </p>
+
+                                        </li>
+                                        <li class="d-flex">
+
+                                            <!-- Check -->
+                                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                                <i class="fe fe-check"></i>
+                                            </div>
+
+                                            <!-- Text -->
+                                            <p>
+                                                Copy your API key and your secret key, paste them in the appropriate fields in
+                                                your <a href="account-settings.html" target="_blank">user settings</a> under Binance
+                                                API Keys. Click on Save changes.
+                                                <img src="assets/img/binance-api-06.png" alt="..." class="img-fluid rounded">
+                                            </p>
+
+                                        </li>
+                                    </ol>
+
+                                    </div> <!-- / .row -->
+
+                                </div>
+                            </div> <!-- / .row -->
+                        </div> <!-- / .container -->
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</main>
+
+<!-- CURVE -->
+<div class="position-relative">
+    <div class="shape shape-bottom shape-fluid-x text-dark">
+        {{> curves/curve-1}}
+    </div>
+</div>
+
+<!-- FOOTER -->
+{{> partials/footer classList="bg-dark"}}
+
+<!-- JAVASCRIPT -->
+{{> partials/scripts}}
+
+</body>
+</html>
