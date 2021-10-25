@@ -9,6 +9,7 @@ const path = require('path');
 
 const paths = {
   src: {
+    auth0: './src/auth0',
     favicon: './src/favicon',
     fonts: './src/fonts',
     img: './src/img',
@@ -17,6 +18,7 @@ const paths = {
     video: './src/video',
   },
   dist: {
+    auth0: './',
     css: './assets/css',
     favicon: './assets/favicon',
     fonts: './assets/fonts',
@@ -91,6 +93,10 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
+        {
+          from: paths.src.auth0,
+          to: paths.dist.auth0,
+        },
         {
           from: paths.src.favicon,
           to: paths.dist.favicon,
